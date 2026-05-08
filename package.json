@@ -1,0 +1,24 @@
+{
+  "name": "auth_node_js_code",
+  "version": "1.0.0",
+  "description": "REST API with JWT auth, OAuth2 &amp; API migration built with Node.js &amp; Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManiAbirami/Auth_node_js_code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ManiAbirami/Auth_node_js_code/issues"
+  },
+  "homepage": "https://github.com/ManiAbirami/Auth_node_js_code#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
