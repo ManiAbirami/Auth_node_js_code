@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/ManiAbirami/Auth_node_js_code#readme",
   "dependencies": {
-    "express": "^5.2.1"
+    "basic-auth": "^2.0.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3"
   }
 }

@@ -6,13 +6,18 @@ app.use(express.json());
 // Import separate auth modules
 const basicAuthRoute = require('./basicAuth');
 const jwtAuthRoute = require('./jwtAuth');
-const oauthAuthRoute = require('./oauthAuth');
+const oauthAuthRoute = require('./oauth');
 
 // Mount routes
 app.use('/basic', basicAuthRoute);
 app.use('/jwt', jwtAuthRoute);
 app.use('/oauth', oauthAuthRoute);
 
-app.listen(3000, () => {
-  console.log('Server running on http://localhost:3000');
+// Import error handler
+const errorHandler = require('./errorHandler');
+app.use(errorHandler); // must be last
+
+app.listen(3000, '0.0.0.0', () => {
+  console.log('Server running on http://0.0.0.0:3000');
 });
+

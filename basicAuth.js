@@ -1,6 +1,7 @@
 const express = require('express');
 const basicAuth = require('basic-auth');
 const router = express.Router();
+const { unauthorized } = require('./errorResponse');
 
 router.post('/login', (req, res) => {
   const user = basicAuth(req);
